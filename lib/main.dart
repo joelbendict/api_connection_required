@@ -1,11 +1,13 @@
 import 'package:e_commerce_app/Login.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatefulWidget {
-  const MyApp({ Key? key }) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -17,11 +19,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData(
           textTheme: GoogleFonts.latoTextTheme(
-            Theme.of(context).textTheme,
-          )),
+        Theme.of(context).textTheme,
+      )),
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
     );
   }
 }
-      
